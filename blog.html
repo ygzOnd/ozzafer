@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Etiketleri -->
+    <title>Blog | Asansör Kiralama & Nakliyat Rehberi | Öz Zafer</title>
+    <meta name="description"
+        content="Asansör kiralama, yüksek kat taşımacılığı, iş güvenliği, dış cephe çözümleri ve nakliye hakkında güncel ipuçları ve faydalı rehber yazıları.">
+    <meta name="keywords"
+        content="öz zafer blog, kiralık asansör rehberi, mobilya asansörü kullanımı, nakliye ipuçları, avcılar asansör kiralama blog">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.ozzaferasansor.com/blog.html">
+
+    <!-- Open Graph (Sosyal Medya Etiketleri) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog - Öz Zafer Asansör Kiralama & Nakliyat">
+    <meta property="og:description"
+        content="Sektörel gelişmeler, asansör kiralama ipuçları ve nakliyat rehber yazılarımızı inceleyin.">
+    <meta property="og:image" content="https://www.ozzaferasansor.com/images/slider2.png">
+    <meta property="og:url" content="https://www.ozzaferasansor.com/blog.html">
+    <meta property="og:site_name" content="Öz Zafer Asansör">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AI Engine Optimization (GEO) - Schema.org Blog Kodu -->
+    <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "Öz Zafer Asansör Blog",
+ "url": "https://www.ozzaferasansor.com/blog.html",
+ "description": "Asansör kiralama, taşımacılık, güvenlik, bakım ve lojistik hakkında faydalı bilgiler.",
+ "publisher": {
+ "@type": "Organization",
+ "name": "Öz Zafer Asansör Kiralama",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://www.ozzaferasansor.com/images/logo.jfif"
+ }
+ }
+ }
+ </script>
+
+    <style>
+        body.blog-page {
+            font-family: 'Roboto', sans-serif;
+            background: #f7f7f7;
+        }
+
+        .blog-hero {
+            min-height: 520px !important;
+            margin-top: 85px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: none !important;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .blog-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover !important;
+            object-position: center bottom !important;
+            z-index: 1;
+        }
+
+        .blog-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .45), rgba(0, 0, 0, .2));
+            z-index: 2;
+        }
+
+        .blog-hero-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0 7%;
+        }
+
+        .blog-hero-content span {
+            display: inline-block;
+            color: #d71920;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .blog-hero-content h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin: 0 0 20px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .blog-hero-content p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 0;
+            color: #eee;
+        }
+
+        .blog-main {
+            padding: 100px 0;
+        }
+
+        .blog-heading {
+            max-width: 750px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .blog-heading span {
+            display: inline-block;
+            color: #d71920;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .blog-heading h2 {
+            color: #171717;
+            font-size: 38px;
+            line-height: 1.2;
+            margin: 0 0 15px;
+            font-weight: 800;
+        }
+
+        .blog-heading p {
+            color: #777;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .blog-grid-new {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .blog-card-new {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .04);
+            transition: .35s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card-new:hover {
+            transform: translateY(-9px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+        }
+
+        .blog-image-new {
+            height: 245px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-image-new img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: .5s;
+        }
+
+        .blog-card-new:hover .blog-image-new img {
+            transform: scale(1.07);
+        }
+
+        .blog-category {
+            position: absolute;
+            top: 17px;
+            left: 17px;
+            background: #d71920;
+            color: #fff;
+            padding: 8px 13px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
+
+        .blog-date-box {
+            position: absolute;
+            right: 17px;
+            bottom: 17px;
+            width: 52px;
+            height: 52px;
+            background: #fff;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+        }
+
+        .blog-date-box strong {
+            color: #d71920;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .blog-date-box span {
+            color: #555;
+            font-size: 8px;
+            margin-top: 3px;
+            font-weight: 700;
+        }
+
+        .blog-content-new {
+            padding: 27px 27px 30px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: #999;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .blog-meta i {
+            color: #d71920;
+        }
+
+        .blog-content-new h3 {
+            color: #171717;
+            font-size: 19px;
+            line-height: 1.45;
+            margin: 0 0 12px;
+            font-weight: 800;
+        }
+
+        .blog-content-new p {
+            color: #777;
+            font-size: 13px;
+            line-height: 1.8;
+            margin: 0 0 22px;
+            flex: 1;
+        }
+
+        .blog-read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: #d71920;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            width: fit-content;
+            transition: .3s;
+        }
+
+        .blog-read-more i {
+            transition: .3s;
+        }
+
+        .blog-read-more:hover {
+            color: #b9141a;
+        }
+
+        .blog-read-more:hover i {
+            transform: translateX(5px);
+        }
+
+        .blog-info {
+            margin-top: 55px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .blog-info h3 {
+            color: #171717;
+            font-size: 22px;
+            margin: 0 0 8px;
+            font-weight: 800;
+        }
+
+        .blog-info p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .blog-info-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 14px 25px;
+            background: #d71920;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 800;
+            white-space: nowrap;
+            transition: .3s;
+        }
+
+        .blog-info-button:hover {
+            background: #b9141a;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(215, 25, 32, .25);
+        }
+
+        .blog-cta {
+            padding: 80px 0;
+            background:
+                linear-gradient(rgba(215, 25, 32, .93), rgba(215, 25, 32, .93)),
+                url("images/r1.jpeg") center/cover no-repeat;
+        }
+
+        .blog-cta-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .blog-cta-content h2 {
+            color: #fff;
+            font-size: 32px;
+            margin: 0 0 10px;
+            font-weight: 800;
+        }
+
+        .blog-cta-content p {
+            color: rgba(255, 255, 255, .9);
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .blog-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 16px 28px;
+            background: #fff;
+            color: #d71920;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 800;
+            white-space: nowrap;
+            transition: .3s;
+        }
+
+        .blog-cta-button:hover {
+            background: #181818;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .blog-grid-new {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blog-info,
+            .blog-cta-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .blog-hero {
+                min-height: 400px !important;
+            }
+
+            .blog-hero-content h1 {
+                font-size: 35px;
+            }
+
+            .blog-hero-content p {
+                font-size: 15px;
+            }
+
+            .blog-main {
+                padding: 65px 0;
+            }
+
+            .blog-heading h2 {
+                font-size: 29px;
+            }
+
+            .blog-grid-new {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-image-new {
+                height: 260px;
+            }
+
+            .blog-info {
+                margin-top: 40px;
+                padding: 28px 22px;
+            }
+
+            .blog-info-button,
+            .blog-cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .blog-cta {
+                padding: 60px 0;
+            }
+
+            .blog-cta-content h2 {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .blog-hero-content h1 {
+                font-size: 29px;
+            }
+
+            .blog-image-new {
+                height: 230px;
+            }
+
+            .blog-content-new {
+                padding: 24px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="blog-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jfif" alt="Öz Zafer Asansör Logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="sayfalar/asansorkirala.html">Asansör Kiralama</a>
+                <a href="sayfalar/hakkimizda.html">Hakkımızda</a>
+                <a href="sayfalar/hizmetler.html">Hizmetlerimiz</a>
+                <a href="sayfalar/fotogaleri.html">Foto Galeri</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="sayfalar/iletisim.html">İletişim</a>
+            </nav>
+
+            <div class="social-icons">
+                <!-- Telefon -->
+                <a href="tel:+905367128164" class="header-icon phone-icon" aria-label="Telefon Et">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+                <!-- Konum / Harita -->
+                <a href="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul"
+                    target="_blank" class="header-icon map-icon" aria-label="Konum">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/905367128164" target="_blank" class="header-icon whatsapp-icon"
+                    aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="blog-hero">
+        <img src="images/r3.jpeg" alt="Öz Zafer Asansör Blog" class="blog-hero-bg">
+        <div class="blog-hero-overlay"></div>
+
+        <div class="container blog-hero-content">
+            <span>BLOG & HABERLER</span>
+            <h1>Asansör Kiralama Yazılarımız</h1>
+            <p>Asansör Kiralama ile ilgili yazılarımızı okuyup, takip edin.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- ================= BLOG GRID ================= -->
+        <section class="blog-main">
+            <div class="container">
+                <div class="blog-heading">
+                    <span>BLOG YAZILARIMIZ</span>
+                    <h2>Güncel Bilgiler ve Faydalı İçerikler</h2>
+                    <p>Asansör kiralama, taşımacılık ve hizmetlerimizle ilgili hazırladığımız faydalı içerikleri
+                        inceleyebilirsiniz.</p>
+                </div>
+
+                <div class="blog-grid-new">
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r1.jpeg" alt="Asansör Kiralama Sürecinde Dikkat Edilmesi Gerekenler"
+                                loading="lazy">
+                            <span class="blog-category">ASANSÖR</span>
+                            <div class="blog-date-box">
+                                <strong>12</strong>
+                                <span>EKİM</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                12 Ekim 2026
+                            </div>
+                            <h3>Asansör Kiralama Sürecinde Dikkat Edilmesi Gerekenler</h3>
+                            <p>Yüksek katlı taşımacılık ve inşaat projelerinde kiralık asansör seçerken nelere dikkat
+                                etmelisiniz?</p>
+                            <a href="blog1.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r2.jpeg" alt="Dış Cephe Temizliğinde Güvenlik Önlemleri" loading="lazy">
+                            <span class="blog-category">GÜVENLİK</span>
+                            <div class="blog-date-box">
+                                <strong>05</strong>
+                                <span>EKİM</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                05 Ekim 2026
+                            </div>
+                            <h3>Dış Cephe Temizliğinde Güvenlik Önlemleri</h3>
+                            <p>Endüstriyel temizlik ve dış cephe uygulamalarında iş güvenliğinin önemi ve kullanılan
+                                ekipmanlar.</p>
+                            <a href="blog2.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r3.jpeg" alt="Mobilya Asansörü ile Hızlı ve Hasarsız Taşınma"
+                                loading="lazy">
+                            <span class="blog-category">TAŞIMACILIK</span>
+                            <div class="blog-date-box">
+                                <strong>28</strong>
+                                <span>EYLÜL</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                28 Eylül 2026
+                            </div>
+                            <h3>Mobilya Asansörü ile Hızlı ve Hasarsız Taşınma</h3>
+                            <p>Dar merdiven boşluklarına ve yüksek katlara eşya taşımada asansör sistemlerinin
+                                avantajları.</p>
+                            <a href="blog3.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r4.jpeg" alt="İnşaat Projelerinde Malzeme Çıkartmanın Pratik Yolları"
+                                loading="lazy">
+                            <span class="blog-category">İNŞAAT</span>
+                            <div class="blog-date-box">
+                                <strong>15</strong>
+                                <span>EYLÜL</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                15 Eylül 2026
+                            </div>
+                            <h3>İnşaat Projelerinde Malzeme Çıkartmanın Pratik Yolları</h3>
+                            <p>Şantiyelerde iş gücünden tasarruf sağlayan mobil asansör çözümleri ve kullanım alanları.
+                            </p>
+                            <a href="blog4.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r5.jpeg" alt="Periyodik Bakımın Asansör Ömrüne Etkisi" loading="lazy">
+                            <span class="blog-category">BAKIM</span>
+                            <div class="blog-date-box">
+                                <strong>02</strong>
+                                <span>EYLÜL</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                02 Eylül 2026
+                            </div>
+                            <h3>Periyodik Bakımın Asansör Ömrüne Etkisi</h3>
+                            <p>Kiralık ve sabit platform sistemlerinin düzenli bakımının operasyonel verimliliğe
+                                katkıları.</p>
+                            <a href="blog5.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card-new">
+                        <div class="blog-image-new">
+                            <img src="images/r6.jpeg" alt="Şehir İçi Taşımacılıkta Lojistik Çözümleri" loading="lazy">
+                            <span class="blog-category">LOJİSTİK</span>
+                            <div class="blog-date-box">
+                                <strong>20</strong>
+                                <span>AĞUSTOS</span>
+                            </div>
+                        </div>
+
+                        <div class="blog-content-new">
+                            <div class="blog-meta">
+                                <i class="fa-regular fa-calendar"></i>
+                                20 Ağustos 2026
+                            </div>
+                            <h3>Şehir İçi Taşımacılıkta Lojistik Çözümleri</h3>
+                            <p>Modern araç filosu ve uzman kadro ile projelerinizde zamandan ve maliyetten nasıl
+                                tasarruf edersiniz?</p>
+                            <a href="blog6.html" class="blog-read-more">
+                                Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="blog-info">
+                    <div>
+                        <h3>Daha fazla bilgiye mi ihtiyacınız var?</h3>
+                        <p>Hizmetlerimiz hakkında detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+                    </div>
+
+                    <a href="sayfalar/iletisim.html" class="blog-info-button">
+                        Bize Ulaşın <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA BANNER ================= -->
+        <section class="blog-cta">
+            <div class="container blog-cta-content">
+                <div>
+                    <h2>Güvenli taşıma için profesyonel çözümler.</h2>
+                    <p>Asansör kiralama ve taşıma hizmetlerimiz hakkında bilgi alın.</p>
+                </div>
+
+                <a href="sayfalar/iletisim.html" class="blog-cta-button">
+                    Teklif Al <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="zafer-footer">
+        <div class="footer-top-banner">
+            <div class="container">
+                <div class="footer-banner-left">
+                    <h2>Yükseklerde Güvenli ve Hızlı Çözümler.</h2>
+                </div>
+
+                <div class="footer-banner-right">
+                    <a href="tel:+905367128164" class="footer-info-box phone-btn">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span>TELEFON</span>
+                            <p>+90 536 712 81 64</p>
+                        </div>
+                    </a>
+
+                    <div class="footer-info-box">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <span>MERKEZ</span>
+                            <p>Avcılar / İstanbul</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main-content">
+            <div class="container footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">ÖzZafer</span> <small>ASANSÖR KİRALAMA</small>
+                    </div>
+                    <p class="footer-about">
+                        Profesyonel asansör kiralama hizmetleriyle yüksek katlara güvenli, hızlı ve pratik çözümler
+                        sunuyoruz.
+                    </p>
+                    <div class="footer-address">
+                        <strong>ADRES</strong>
+                        <p>Denizköşkler Mah. Dr.Sadık Ahmet Cad.No:114 Avcılar/İstanbul</p>
+                    </div>
+                    <div class="footer-socials" style="margin-top: 15px;">
+                        <a href="https://www.instagram.com/ozzafer_nakliyat/" target="_blank" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ozzafernakliye" target="_blank" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/905367128164" target="_blank" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>HİZMETLERİMİZ</h4>
+                    <ul>
+                        <li><a href="sayfalar/hizmetler.html">Evden Eve Taşımacılık</a></li>
+                        <li><a href="sayfalar/asansorkirala.html">Asansör Kiralama</a></li>
+                        <li><a href="sayfalar/hizmetler.html">Asansörlü Nakliye</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>SİTE NAVİGASYONU</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="sayfalar/hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="sayfalar/asansorkirala.html">Asansör Kiralama</a></li>
+                        <li><a href="sayfalar/hizmetler.html">Hizmetlerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sayfalar/fotogaleri.html">Foto Galeri</a></li>
+                        <li><a href="sayfalar/iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-map">
+                    <h4>HARİTADA BİZ</h4>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul&output=embed"
+                            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Öz Zafer Asansör Konum Haritası">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Öz Zafer Asansör. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= WHATSAPP ================= -->
+    <a href="https://wa.me/905367128164" class="whatsapp-button" aria-label="WhatsApp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+    <script>
+        const blogCards = document.querySelectorAll(".blog-card-new");
+
+        blogCards.forEach(function (card) {
+            card.addEventListener("mouseenter", function () {
+                card.style.transform = "translateY(-9px)";
+            });
+
+            card.addEventListener("mouseleave", function () {
+                card.style.transform = "translateY(0)";
+            });
+        });
+    </script>
+</body>
+
+</html>
