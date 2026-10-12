@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="../style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+ <title>Hizmetlerimiz | Asansörlü Nakliye ve Taşıma | Öz Zafer</title>
+
+<meta name="description"
+ content="Öz Zafer Asansör; asansör kiralama, asansörlü nakliye, evden eve taşımacılık ve profesyonel eşya taşıma hizmetleri sunar.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+ href="https://www.ozzaferasansor.com/sayfalar/hizmetler.html">
+ <style>
+ .services-page {
+ background: #f7f7f7;
+ }
+
+ .services-hero {
+ min-height: 520px !important;
+ margin-top: 85px;
+ position: relative;
+ display: flex;
+ align-items: center;
+ background: none !important;
+ color: #fff;
+ overflow: hidden;
+ }
+
+ .services-hero-bg {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover !important;
+ object-position: center bottom !important;
+ z-index: 1;
+ }
+
+ .services-hero-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .45), rgba(0, 0, 0, .2));
+ z-index: 2;
+ }
+
+ .services-hero-content {
+ position: relative;
+ z-index: 3;
+ width: 100%;
+ max-width: 100%;
+ margin: 0;
+ padding: 0 7%;
+ }
+
+ .services-hero-content span {
+ display: inline-block;
+ color: #d71920;
+ font-size: 15px;
+ font-weight: 800;
+ letter-spacing: 2px;
+ margin-bottom: 15px;
+ }
+
+ .services-hero-content h1 {
+ font-size: 52px;
+ line-height: 1.15;
+ margin: 0 0 20px;
+ font-weight: 800;
+ }
+
+ .services-hero-content p {
+ font-size: 18px;
+ line-height: 1.7;
+ margin: 0;
+ color: #eee;
+ }
+
+ .services-main {
+ padding: 100px 0;
+ }
+
+ .services-heading {
+ text-align: center;
+ max-width: 750px;
+ margin: 0 auto 55px;
+ }
+
+ .services-heading span {
+ display: inline-block;
+ color: #d71920;
+ font-size: 14px;
+ font-weight: 800;
+ letter-spacing: 1.5px;
+ margin-bottom: 12px;
+ }
+
+ .services-heading h2 {
+ margin: 0 0 16px;
+ color: #171717;
+ font-size: 38px;
+ line-height: 1.2;
+ font-weight: 800;
+ }
+
+ .services-heading p {
+ margin: 0;
+ color: #777;
+ font-size: 15px;
+ line-height: 1.8;
+ }
+
+ .services-grid-new {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 28px;
+ }
+
+ .service-card-new {
+ background: #fff;
+ border-radius: 12px;
+ overflow: hidden;
+ border: 1px solid #eee;
+ position: relative;
+ transition: .35s;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, .04);
+ }
+
+ .service-card-new:hover {
+ transform: translateY(-10px);
+ box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+ }
+
+ .service-card-image {
+ height: 280px;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .service-card-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+ transition: .5s;
+ }
+
+ .service-card-new:hover .service-card-image img {
+ transform: scale(1.07);
+ }
+
+ .service-card-number {
+ position: absolute;
+ top: 18px;
+ left: 18px;
+ width: 48px;
+ height: 48px;
+ background: #d71920;
+ color: #fff;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 14px;
+ font-weight: 800;
+ z-index: 2;
+ }
+
+ .service-card-icon {
+ position: absolute;
+ right: 18px;
+ bottom: 18px;
+ width: 52px;
+ height: 52px;
+ background: #fff;
+ color: #d71920;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 21px;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+ z-index: 2;
+ }
+
+ .service-card-content {
+ padding: 28px 28px 30px;
+ }
+
+ .service-card-content h3 {
+ margin: 0 0 13px;
+ color: #171717;
+ font-size: 21px;
+ font-weight: 800;
+ }
+
+ .service-card-content p {
+ margin: 0 0 22px;
+ color: #777;
+ font-size: 14px;
+ line-height: 1.8;
+ }
+
+ .service-card-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 9px;
+ color: #d71920;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 800;
+ transition: .3s;
+ }
+
+ .service-card-link i {
+ transition: .3s;
+ }
+
+ .service-card-link:hover i {
+ transform: translateX(5px);
+ }
+
+ .services-benefits {
+ padding: 90px 0;
+ background: #fff;
+ }
+
+ .benefits-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 65px;
+ align-items: center;
+ }
+
+ .benefits-image {
+ position: relative;
+ }
+
+ .benefits-image img {
+ width: 100%;
+ height: 480px;
+ object-fit: cover;
+ border-radius: 12px;
+ display: block;
+ box-shadow: 0 20px 50px rgba(0, 0, 0, .13);
+ }
+
+ .benefits-content span {
+ display: inline-block;
+ color: #d71920;
+ font-size: 14px;
+ font-weight: 800;
+ letter-spacing: 1.5px;
+ margin-bottom: 12px;
+ }
+
+ .benefits-content h2 {
+ color: #171717;
+ font-size: 37px;
+ line-height: 1.2;
+ margin: 0 0 20px;
+ font-weight: 800;
+ }
+
+ .benefits-content>p {
+ color: #707070;
+ font-size: 15px;
+ line-height: 1.9;
+ margin: 0 0 25px;
+ }
+
+ .benefit-list {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ }
+
+ .benefit-list li {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ margin-bottom: 17px;
+ color: #333;
+ font-size: 14px;
+ font-weight: 600;
+ }
+
+ .benefit-list i {
+ width: 27px;
+ height: 27px;
+ background: #d71920;
+ color: #fff;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 12px;
+ flex-shrink: 0;
+ }
+
+ .services-process {
+ padding: 90px 0;
+ background: #f7f7f7;
+ }
+
+ .process-heading {
+ text-align: center;
+ max-width: 700px;
+ margin: 0 auto 50px;
+ }
+
+ .process-heading span {
+ color: #d71920;
+ font-size: 14px;
+ font-weight: 800;
+ letter-spacing: 1.5px;
+ }
+
+ .process-heading h2 {
+ color: #171717;
+ font-size: 37px;
+ margin: 12px 0 15px;
+ font-weight: 800;
+ }
+
+ .process-heading p {
+ color: #777;
+ font-size: 15px;
+ line-height: 1.8;
+ margin: 0;
+ }
+
+ .process-grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+ }
+
+ .process-kard {
+ background: #fff;
+ border: 1px solid #eee;
+ border-radius: 10px;
+ padding: 35px 25px;
+ text-align: center;
+ position: relative;
+ transition: .3s;
+ }
+
+ .process-kard:hover {
+ transform: translateY(-7px);
+ box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+ }
+
+ .process-icon {
+ width: 65px;
+ height: 65px;
+ margin: 0 auto 20px;
+ background: #fff1f1;
+ color: #d71920;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 24px;
+ }
+
+ .process-kard strong {
+ display: block;
+ color: #d71920;
+ font-size: 12px;
+ letter-spacing: 1px;
+ margin-bottom: 8px;
+ }
+
+ .process-kard h3 {
+ color: #171717;
+ font-size: 17px;
+ margin: 0 0 10px;
+ font-weight: 800;
+ }
+
+ .process-kard p {
+ color: #777;
+ font-size: 13px;
+ line-height: 1.7;
+ margin: 0;
+ }
+
+ .services-cta {
+ padding: 80px 0;
+ background:
+ linear-gradient(rgba(215, 25, 32, .93), rgba(215, 25, 32, .93)),
+ url("../images/hizmetlerimiz1.png") center/cover no-repeat;
+ }
+
+ .services-cta-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 35px;
+ }
+
+ .services-cta-content h2 {
+ color: #fff;
+ font-size: 32px;
+ margin: 0 0 10px;
+ font-weight: 800;
+ }
+
+ .services-cta-content p {
+ color: rgba(255, 255, 255, .9);
+ margin: 0;
+ font-size: 15px;
+ }
+
+ .services-cta-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ padding: 16px 30px;
+ background: #fff;
+ color: #d71920;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 14px;
+ font-weight: 800;
+ white-space: nowrap;
+ transition: .3s;
+ }
+
+ .services-cta-button:hover {
+ background: #181818;
+ color: #fff;
+ transform: translateY(-3px);
+ }
+
+ .services-page .footer-info-box:not(.phone-btn) {
+ cursor: default;
+ }
+
+ .services-page .footer-info-box:not(.phone-btn):hover {
+ border-color: #d71920;
+ transform: translateY(-3px);
+ background: #1f1213;
+ }
+
+ .services-page .footer-socials a:nth-child(1):hover {
+ color: #E4405F;
+ }
+
+ .services-page .footer-socials a:nth-child(2):hover {
+ color: #1877F2;
+ }
+
+ .services-page .footer-socials a:nth-child(3):hover {
+ color: #25D366;
+ }
+
+ @media (max-width: 1000px) {
+ .services-grid-new {
+ grid-template-columns: repeat(2, 1fr);
+ }
+
+ .process-grid {
+ grid-template-columns: repeat(2, 1fr);
+ }
+
+ .benefits-grid {
+ grid-template-columns: 1fr;
+ gap: 45px;
+ }
+
+ .benefits-image {
+ max-width: 700px;
+ margin: 0 auto;
+ }
+
+ .benefits-content {
+ text-align: center;
+ }
+
+ .benefit-list {
+ display: inline-block;
+ text-align: left;
+ }
+
+ .services-cta-content {
+ flex-direction: column;
+ text-align: center;
+ }
+ }
+
+ @media (max-width: 700px) {
+ .services-hero {
+ min-height: 400px !important;
+ }
+
+ .services-hero-content {
+ padding: 50px 20px 0;
+ }
+
+ .services-hero-content h1 {
+ font-size: 35px;
+ }
+
+ .services-hero-content p {
+ font-size: 15px;
+ }
+
+ .services-main {
+ padding: 65px 0;
+ }
+
+ .services-heading h2 {
+ font-size: 29px;
+ }
+
+ .services-grid-new {
+ grid-template-columns: 1fr;
+ }
+
+ .service-card-image {
+ height: 250px;
+ }
+
+ .services-benefits {
+ padding: 65px 0;
+ }
+
+ .benefits-image img {
+ height: 350px;
+ }
+
+ .benefits-content h2 {
+ font-size: 29px;
+ }
+
+ .services-process {
+ padding: 65px 0;
+ }
+
+ .process-heading h2 {
+ font-size: 29px;
+ }
+
+ .process-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .services-cta {
+ padding: 60px 0;
+ }
+
+ .services-cta-content h2 {
+ font-size: 26px;
+ }
+
+ .services-cta-button {
+ width: 100%;
+ }
+ }
+
+ @media (max-width: 500px) {
+ .services-hero-content h1 {
+ font-size: 29px;
+ }
+
+ .service-card-content {
+ padding: 24px;
+ }
+
+ .benefits-image img {
+ height: 290px;
+ }
+ }
+ </style>
+</head>
+
+<body class="services-page">
+
+ <header class="header">
+ <div class="container header-container">
+
+ <a href="../index.html" class="logo">
+ <img src="../images/logo.jfif" alt="Öz Zafer Asansör Logo">
+ </a>
+
+ <nav class="navbar">
+ <a href="../index.html">Ana Sayfa</a>
+ <a href="../sayfalar/asansorkirala.html">Asansör Kiralama</a>
+ <a href="../sayfalar/hakkimizda.html">Hakkımızda</a>
+ <a href="../sayfalar/hizmetler.html" class="active">Hizmetlerimiz</a>
+ <a href="../sayfalar/fotogaleri.html">Foto Galeri</a>
+ <a href="../blog.html">Blog</a>
+ <a href="../sayfalar/iletisim.html">İletişim</a>
+ </nav>
+
+ <div class="social-icons">
+ <!-- Telefon -->
+    <a href="tel:+905367128164" class="header-icon phone-icon" aria-label="Telefon Et">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Konum / Harita -->
+    <a href="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul" target="_blank" class="header-icon map-icon" aria-label="Konum">
+        <i class="fa-solid fa-location-dot"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/905367128164" target="_blank" class="header-icon whatsapp-icon" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+ 
+ </div>
+
+ <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+ <i class="fa-solid fa-bars"></i>
+ </button>
+
+ </div>
+ </header>
+
+ <section class="services-hero">
+ <img src="../images/h3.jfif" alt="Öz Zafer Asansör Hizmetleri" class="services-hero-bg">
+ <div class="services-hero-overlay"></div>
+
+ <div class="container services-hero-content">
+ <span>HİZMETLERİMİZ</span>
+
+ <h1>Profesyonel Hizmetlerimiz</h1>
+
+ <p>
+ Öz Zafer Asansör ile güvenli, hızlı ve profesyonel çözümler.
+ </p>
+ </div>
+
+ </section>
+
+ <main>
+
+ <section class="services-main">
+
+ <div class="container">
+
+ <div class="services-heading">
+ <span>HİZMETLERİMİZ</span>
+
+ <h2>İhtiyacınıza Uygun Çözümler</h2>
+
+ <p>
+ Taşıma ve asansör ihtiyaçlarınız için profesyonel,
+ güvenli ve pratik hizmetler sunuyoruz.
+ </p>
+ </div>
+
+ <div class="services-grid-new">
+
+ <div class="service-card-new">
+
+ <div class="service-card-image">
+
+ <img src="../images/hizmetlerimiz2.png" alt="Evden Eve Taşımacılık">
+
+ <div class="service-card-number">01</div>
+
+ <div class="service-card-icon">
+ <i class="fa-solid fa-truck-moving"></i>
+ </div>
+
+ </div>
+
+ <div class="service-card-content">
+
+ <h3>Evden Eve Taşımacılık</h3>
+
+ <p>
+ Taşınma sürecinizi kolaylaştıran profesyonel
+ çözümler ile eşyalarınızın güvenli şekilde
+ taşınmasına yardımcı oluyoruz.
+ </p>
+
+ <a href="iletisim.html" class="service-card-link">
+ Detaylı Bilgi
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </div>
+
+ <div class="service-card-new">
+
+ <div class="service-card-image">
+
+ <img src="../images/hizmetlerimiz1.png" alt="Asansör Kiralama">
+
+ <div class="service-card-number">02</div>
+
+ <div class="service-card-icon">
+ <i class="fa-solid fa-elevator"></i>
+ </div>
+
+ </div>
+
+ <div class="service-card-content">
+
+ <h3>Asansör Kiralama</h3>
+
+ <p>
+ Yüksek katlara eşya ve malzeme taşımayı
+ kolaylaştıran güvenli ve hızlı asansör
+ kiralama hizmeti sunuyoruz.
+ </p>
+
+ <a href="asansorkirala.html" class="service-card-link">
+ Detaylı Bilgi
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </div>
+
+ <div class="service-card-new">
+
+ <div class="service-card-image">
+
+ <img src="../images/hizmetlerimiz3.png" alt="Asansörlü Nakliye">
+
+ <div class="service-card-number">03</div>
+
+ <div class="service-card-icon">
+ <i class="fa-solid fa-boxes-stacked"></i>
+ </div>
+
+ </div>
+
+ <div class="service-card-content">
+
+ <h3>Asansörlü Nakliye</h3>
+
+ <p>
+ Asansörlü nakliye hizmetimiz ile taşıma
+ sürecini daha pratik hale getirerek
+ zamandan ve enerjiden tasarruf sağlıyoruz.
+ </p>
+
+ <a href="iletisim.html" class="service-card-link">
+ Detaylı Bilgi
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <section class="services-benefits">
+
+ <div class="container">
+
+ <div class="benefits-grid">
+
+ <div class="benefits-image">
+
+ <img src="../images/hizmetlerimiz1.png" alt="Profesyonel Asansör Hizmeti">
+
+ </div>
+
+ <div class="benefits-content">
+
+ <span>NEDEN BİZ?</span>
+
+ <h2>Taşıma Sürecinde Güvenli Çözümler</h2>
+
+ <p>
+ Öz Zafer Asansör olarak taşıma işlemlerinin daha
+ kolay, hızlı ve güvenli şekilde gerçekleştirilmesi
+ için profesyonel çözümler sunuyoruz.
+ </p>
+
+ <ul class="benefit-list">
+
+ <li>
+ <i class="fa-solid fa-check"></i>
+ Profesyonel ekipman kullanımı
+ </li>
+
+ <li>
+ <i class="fa-solid fa-check"></i>
+ Deneyimli ve profesyonel ekip
+ </li>
+
+ <li>
+ <i class="fa-solid fa-check"></i>
+ Yüksek katlara güvenli taşıma
+ </li>
+
+ <li>
+ <i class="fa-solid fa-check"></i>
+ Hızlı ve pratik çözümler
+ </li>
+
+ <li>
+ <i class="fa-solid fa-check"></i>
+ Müşteri memnuniyeti odaklı hizmet
+ </li>
+
+ </ul>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <section class="services-process">
+
+ <div class="container">
+
+ <div class="process-heading">
+
+ <span>ÇALIŞMA SÜRECİMİZ</span>
+
+ <h2>Nasıl Çalışıyoruz?</h2>
+
+ <p>
+ Hizmet sürecimizi planlı ve anlaşılır bir şekilde
+ gerçekleştiriyoruz.
+ </p>
+
+ </div>
+
+ <div class="process-grid">
+
+ <div class="process-kard">
+
+ <div class="process-icon">
+ <i class="fa-solid fa-phone"></i>
+ </div>
+
+ <strong>01. ADIM</strong>
+
+ <h3>İletişime Geçin</h3>
+
+ <p>
+ İhtiyacınızı bize iletin ve hizmet hakkında
+ bilgi alın.
+ </p>
+
+ </div>
+
+ <div class="process-kard">
+
+ <div class="process-icon">
+ <i class="fa-solid fa-clipboard-check"></i>
+ </div>
+
+ <strong>02. ADIM</strong>
+
+ <h3>Planlama</h3>
+
+ <p>
+ Taşıma koşullarına uygun hizmet planlaması
+ gerçekleştirelim.
+ </p>
+
+ </div>
+
+ <div class="process-kard">
+
+ <div class="process-icon">
+ <i class="fa-solid fa-truck-fast"></i>
+ </div>
+
+ <strong>03. ADIM</strong>
+
+ <h3>Hizmet</h3>
+
+ <p>
+ Planlanan hizmeti profesyonel ekipmanlarla
+ gerçekleştirelim.
+ </p>
+
+ </div>
+
+ <div class="process-kard">
+
+ <div class="process-icon">
+ <i class="fa-solid fa-circle-check"></i>
+ </div>
+
+ <strong>04. ADIM</strong>
+
+ <h3>Güvenli Teslim</h3>
+
+ <p>
+ Taşıma sürecini düzenli ve güvenli şekilde
+ tamamlayalım.
+ </p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <section class="services-cta">
+
+ <div class="container services-cta-content">
+
+ <div>
+ <h2>Profesyonel hizmet için bizimle iletişime geçin.</h2>
+
+ <p>
+ Asansör kiralama ve taşıma hizmetleri hakkında bilgi alın.
+ </p>
+ </div>
+
+ <a href="iletisim.html" class="services-cta-button">
+ Teklif Al
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </section>
+
+ </main>
+
+ <footer class="zafer-footer">
+
+ <div class="footer-top-banner">
+
+ <div class="container">
+
+ <div class="footer-banner-left">
+ <h2>Yükseklerde Güvenli ve Hızlı Çözümler.</h2>
+ </div>
+
+ <div class="footer-banner-right">
+
+ <a href="tel:+905367128164" class="footer-info-box phone-btn">
+
+ <div class="icon-box">
+ <i class="fa-solid fa-phone"></i>
+ </div>
+
+ <div>
+ <span>TELEFON</span>
+ <p>+90 536 712 81 64</p>
+ </div>
+
+ </a>
+
+ <div class="footer-info-box">
+
+ <div class="icon-box">
+ <i class="fa-solid fa-location-dot"></i>
+ </div>
+
+ <div>
+ <span>MERKEZ</span>
+ <p>Avcılar / İstanbul</p>
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="footer-main-content">
+
+ <div class="container footer-grid">
+
+ <div class="footer-col brand-col">
+
+ <div class="footer-logo">
+ <span class="logo-text">ÖzZafer</span>
+ <small>ASANSÖR KİRALAMA</small>
+ </div>
+
+ <p class="footer-about">
+ Profesyonel asansör kiralama hizmetleriyle yüksek
+ katlara güvenli, hızlı ve pratik çözümler sunuyoruz.
+ </p>
+
+ <div class="footer-address">
+ <strong>ADRES</strong>
+ <p>
+ Denizköşkler Mah. Dr.Sadık Ahmet Cad.No:114
+ Avcılar/İstanbul
+ </p>
+ </div>
+
+ <div class="footer-socials">
+
+ <a href="https://www.instagram.com/ozzafer_nakliyat/" target="_blank" aria-label="Instagram">
+ <i class="fa-brands fa-instagram"></i>
+ </a>
+
+ <a href="https://www.facebook.com/ozzafernakliye" target="_blank" aria-label="Facebook">
+ <i class="fa-brands fa-facebook-f"></i>
+ </a>
+
+ <a href="https://wa.me/905367128164" target="_blank" aria-label="WhatsApp">
+ <i class="fa-brands fa-whatsapp"></i>
+ </a>
+
+ </div>
+
+ </div>
+
+ <div class="footer-col">
+
+ <h4>HİZMETLERİMİZ</h4>
+
+ <ul>
+ <li>
+ <a href="../sayfalar/hizmetler.html">
+ Evden Eve Taşımacılık
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/asansorkirala.html">
+ Asansör Kiralama
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/hizmetler.html">
+ Asansörlü Nakliye
+ </a>
+ </li>
+ </ul>
+
+ </div>
+
+ <div class="footer-col">
+
+ <h4>SİTE NAVİGASYONU</h4>
+
+ <ul>
+ <li><a href="../index.html">Ana Sayfa</a></li>
+ <li><a href="../sayfalar/hakkimizda.html">Hakkımızda</a></li>
+ <li><a href="../sayfalar/asansorkirala.html">Asansör Kiralama</a></li>
+ <li><a href="../sayfalar/hizmetler.html">Hizmetlerimiz</a></li>
+ <li><a href="../blog.html">Blog</a></li>
+ <li><a href="../sayfalar/fotogaleri.html">Foto Galeri</a></li>
+ <li><a href="../sayfalar/iletisim.html">İletişim</a></li>
+ </ul>
+
+ </div>
+
+ <div class="footer-col footer-map">
+
+ <h4>HARİTADA BİZ</h4>
+
+ <div class="map-container">
+
+ <iframe
+ src="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul&output=embed"
+ width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+ referrerpolicy="no-referrer-when-downgrade">
+ </iframe>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="footer-bottom-bar">
+
+ <div class="container bottom-flex">
+ <p>&copy; 2026 Öz Zafer Asansör. Tüm hakları saklıdır.</p>
+ </div>
+
+ </div>
+
+ </footer>
+
+ <a href="https://wa.me/905367128164" class="whatsapp-button" aria-label="WhatsApp" target="_blank">
+ <i class="fa-brands fa-whatsapp"></i>
+ </a>
+
+ <script src="../script.js"></script>
+
+ <script>
+ const serviceCards = document.querySelectorAll(".service-card-new");
+ const processCards = document.querySelectorAll(".process-kard");
+
+ serviceCards.forEach(function (card) {
+ card.addEventListener("mouseenter", function () {
+ card.style.transform = "translateY(-10px)";
+ });
+
+ card.addEventListener("mouseleave", function () {
+ card.style.transform = "translateY(0)";
+ });
+ });
+
+ processCards.forEach(function (card) {
+ card.addEventListener("mouseenter", function () {
+ card.style.transform = "translateY(-7px)";
+ });
+
+ card.addEventListener("mouseleave", function () {
+ card.style.transform = "translateY(0)";
+ });
+ });
+ </script>
+
+</body>
+
+</html>

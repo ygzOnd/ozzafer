@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="../style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <title>Foto Galeri | Öz Zafer Asansör Kiralama</title>
+
+<meta name="description"
+ content="Öz Zafer Asansör çalışmalarından fotoğrafları inceleyin. Asansör kiralama, taşıma ve profesyonel hizmetlerimizden görüntüler.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+ href="https://www.ozzaferasansor.com/sayfalar/fotogaleri.html">
+
+ <style>
+ .gallery-page {
+ background: #f7f7f7;
+ }
+
+ .gallery-hero {
+ min-height: 520px !important;
+ margin-top: 85px;
+ position: relative;
+ display: flex;
+ align-items: center;
+ background: none !important;
+ color: #fff;
+ overflow: hidden;
+ }
+
+ .gallery-hero-bg {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover !important;
+ object-position: center bottom !important;
+ z-index: 1;
+ }
+
+ .gallery-hero-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .45), rgba(0, 0, 0, .2));
+ z-index: 2;
+ }
+
+ .gallery-hero-content {
+ position: relative;
+ z-index: 3;
+ width: 100%;
+ max-width: 100%;
+ margin: 0;
+ padding: 0 7%;
+ }
+
+ .gallery-hero-content span {
+ display: inline-block;
+ color: #d71920;
+ font-size: 15px;
+ font-weight: 800;
+ letter-spacing: 2px;
+ margin-bottom: 15px;
+ }
+
+ .gallery-hero-content h1 {
+ font-size: 52px;
+ line-height: 1.15;
+ margin: 0 0 20px;
+ font-weight: 800;
+ }
+
+ .gallery-hero-content p {
+ font-size: 18px;
+ line-height: 1.7;
+ margin: 0;
+ color: #eee;
+ }
+
+ .gallery-main {
+ padding: 100px 0;
+ }
+
+ .gallery-heading {
+ max-width: 750px;
+ text-align: center;
+ margin: 0 auto 55px;
+ }
+
+ .gallery-heading span {
+ display: inline-block;
+ color: #d71920;
+ font-size: 14px;
+ font-weight: 800;
+ letter-spacing: 1.5px;
+ margin-bottom: 12px;
+ }
+
+ .gallery-heading h2 {
+ color: #171717;
+ font-size: 38px;
+ line-height: 1.2;
+ margin: 0 0 15px;
+ font-weight: 800;
+ }
+
+ .gallery-heading p {
+ color: #777;
+ font-size: 15px;
+ line-height: 1.8;
+ margin: 0;
+ }
+
+ .gallery-grid-new {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 22px;
+ }
+
+ .gallery-item-new {
+ height: 320px;
+ position: relative;
+ overflow: hidden;
+ border-radius: 10px;
+ cursor: pointer;
+ background: #ddd;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, .07);
+ }
+
+ .gallery-item-new:nth-child(1),
+ .gallery-item-new:nth-child(4) {
+ height: 390px;
+ }
+
+ .gallery-item-new img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+ transition: .5s;
+ }
+
+ .gallery-item-new:hover img {
+ transform: scale(1.08);
+ }
+
+ .gallery-overlay {
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(to top,
+ rgba(0, 0, 0, .72),
+ rgba(0, 0, 0, 0) 65%);
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ padding: 22px;
+ opacity: 0;
+ transition: .3s;
+ }
+
+ .gallery-item-new:hover .gallery-overlay {
+ opacity: 1;
+ }
+
+ .gallery-overlay-content {
+ color: #fff;
+ }
+
+ .gallery-overlay-content span {
+ display: block;
+ color: #d71920;
+ font-size: 11px;
+ font-weight: 800;
+ letter-spacing: 1px;
+ margin-bottom: 5px;
+ }
+
+ .gallery-overlay-content h3 {
+ margin: 0;
+ font-size: 16px;
+ font-weight: 800;
+ }
+
+ .gallery-zoom {
+ width: 45px;
+ height: 45px;
+ border-radius: 50%;
+ background: #d71920;
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 17px;
+ flex-shrink: 0;
+ }
+
+ .gallery-info {
+ margin-top: 55px;
+ background: #fff;
+ border-radius: 10px;
+ padding: 35px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 30px;
+ border: 1px solid #eee;
+ }
+
+ .gallery-info-content h3 {
+ color: #171717;
+ font-size: 22px;
+ margin: 0 0 8px;
+ font-weight: 800;
+ }
+
+ .gallery-info-content p {
+ color: #777;
+ font-size: 14px;
+ line-height: 1.7;
+ margin: 0;
+ }
+
+ .gallery-info-button {
+ display: inline-flex;
+ align-items: center;
+ gap: 9px;
+ padding: 14px 25px;
+ background: #d71920;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 13px;
+ font-weight: 800;
+ white-space: nowrap;
+ transition: .3s;
+ }
+
+ .gallery-info-button:hover {
+ background: #b9141a;
+ transform: translateY(-3px);
+ box-shadow: 0 10px 25px rgba(215, 25, 32, .25);
+ }
+
+ .gallery-lightbox {
+ position: fixed;
+ inset: 0;
+ background: rgba(0, 0, 0, .94);
+ z-index: 9999;
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 40px;
+ }
+
+ .gallery-lightbox.active {
+ display: flex;
+ }
+
+ .lightbox-image {
+ max-width: 90vw;
+ max-height: 82vh;
+ object-fit: contain;
+ border-radius: 5px;
+ box-shadow: 0 20px 60px rgba(0, 0, 0, .5);
+ }
+
+ .lightbox-close {
+ position: absolute;
+ top: 25px;
+ right: 30px;
+ width: 48px;
+ height: 48px;
+ border: 0;
+ border-radius: 50%;
+ background: #d71920;
+ color: #fff;
+ font-size: 20px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: .3s;
+ }
+
+ .lightbox-close:hover {
+ background: #fff;
+ color: #d71920;
+ }
+
+ .lightbox-prev,
+ .lightbox-next {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 50px;
+ height: 50px;
+ border: 0;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, .15);
+ color: #fff;
+ font-size: 20px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: .3s;
+ }
+
+ .lightbox-prev {
+ left: 30px;
+ }
+
+ .lightbox-next {
+ right: 30px;
+ }
+
+ .lightbox-prev:hover,
+ .lightbox-next:hover {
+ background: #d71920;
+ }
+
+ .lightbox-counter {
+ position: absolute;
+ bottom: 25px;
+ left: 50%;
+ transform: translateX(-50%);
+ color: #fff;
+ background: rgba(0, 0, 0, .55);
+ padding: 8px 15px;
+ border-radius: 20px;
+ font-size: 13px;
+ font-weight: 600;
+ }
+
+ .gallery-cta {
+ padding: 80px 0;
+ background:
+ linear-gradient(rgba(215, 25, 32, .93), rgba(215, 25, 32, .93)),
+ url("../images/hizmetlerimiz1.png") center/cover no-repeat;
+ }
+
+ .gallery-cta-content {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 30px;
+ }
+
+ .gallery-cta-content h2 {
+ color: #fff;
+ font-size: 32px;
+ margin: 0 0 10px;
+ font-weight: 800;
+ }
+
+ .gallery-cta-content p {
+ color: rgba(255, 255, 255, .9);
+ margin: 0;
+ font-size: 15px;
+ }
+
+ .gallery-cta-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 9px;
+ padding: 16px 28px;
+ background: #fff;
+ color: #d71920;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 13px;
+ font-weight: 800;
+ white-space: nowrap;
+ transition: .3s;
+ }
+
+ .gallery-cta-button:hover {
+ background: #181818;
+ color: #fff;
+ transform: translateY(-3px);
+ }
+
+ .gallery-page .footer-info-box:not(.phone-btn) {
+ cursor: default;
+ }
+
+ .gallery-page .footer-info-box:not(.phone-btn):hover {
+ border-color: #d71920;
+ transform: translateY(-3px);
+ background: #1f1213;
+ }
+
+ .gallery-page .footer-socials a:nth-child(1):hover {
+ color: #E4405F;
+ }
+
+ .gallery-page .footer-socials a:nth-child(2):hover {
+ color: #1877F2;
+ }
+
+ .gallery-page .footer-socials a:nth-child(3):hover {
+ color: #25D366;
+ }
+
+ @media (max-width: 1000px) {
+ .gallery-grid-new {
+ grid-template-columns: repeat(2, 1fr);
+ }
+
+ .gallery-item-new,
+ .gallery-item-new:nth-child(1),
+ .gallery-item-new:nth-child(4) {
+ height: 330px;
+ }
+
+ .gallery-info {
+ flex-direction: column;
+ text-align: center;
+ }
+
+ .gallery-cta-content {
+ flex-direction: column;
+ text-align: center;
+ }
+ }
+
+ @media (max-width: 700px) {
+ .gallery-hero {
+ min-height: 400px !important;
+ }
+
+ .gallery-hero-content {
+ padding: 50px 20px 0;
+ }
+
+ .gallery-hero-content h1 {
+ font-size: 35px;
+ }
+
+ .gallery-hero-content p {
+ font-size: 15px;
+ }
+
+ .gallery-main {
+ padding: 65px 0;
+ }
+
+ .gallery-heading h2 {
+ font-size: 29px;
+ }
+
+ .gallery-grid-new {
+ grid-template-columns: 1fr;
+ gap: 18px;
+ }
+
+ .gallery-item-new,
+ .gallery-item-new:nth-child(1),
+ .gallery-item-new:nth-child(4) {
+ height: 300px;
+ }
+
+ .gallery-overlay {
+ opacity: 1;
+ }
+
+ .gallery-info {
+ margin-top: 40px;
+ padding: 28px 22px;
+ }
+
+ .gallery-info-button {
+ width: 100%;
+ justify-content: center;
+ }
+
+ .gallery-cta {
+ padding: 60px 0;
+ }
+
+ .gallery-cta-content h2 {
+ font-size: 26px;
+ }
+
+ .gallery-cta-button {
+ width: 100%;
+ }
+
+ .gallery-lightbox {
+ padding: 20px;
+ }
+
+ .lightbox-image {
+ max-width: 95vw;
+ max-height: 75vh;
+ }
+
+ .lightbox-close {
+ top: 15px;
+ right: 15px;
+ }
+
+ .lightbox-prev {
+ left: 12px;
+ }
+
+ .lightbox-next {
+ right: 12px;
+ }
+
+ .lightbox-prev,
+ .lightbox-next {
+ width: 42px;
+ height: 42px;
+ font-size: 16px;
+ }
+ }
+
+ @media (max-width: 500px) {
+ .gallery-hero-content h1 {
+ font-size: 29px;
+ }
+
+ .gallery-item-new,
+ .gallery-item-new:nth-child(1),
+ .gallery-item-new:nth-child(4) {
+ height: 270px;
+ }
+ }
+ </style>
+</head>
+
+<body class="gallery-page">
+
+ <header class="header">
+
+ <div class="container header-container">
+
+ <a href="../index.html" class="logo">
+ <img src="../images/logo.jfif" alt="Öz Zafer Asansör Logo">
+ </a>
+
+ <nav class="navbar">
+
+ <a href="../index.html">Ana Sayfa</a>
+
+ <a href="../sayfalar/asansorkirala.html">
+ Asansör Kiralama
+ </a>
+
+ <a href="../sayfalar/hakkimizda.html">
+ Hakkımızda
+ </a>
+
+ <a href="../sayfalar/hizmetler.html">
+ Hizmetlerimiz
+ </a>
+
+ <a href="../sayfalar/fotogaleri.html" class="active">
+ Foto Galeri
+ </a>
+
+ <a href="../blog.html">
+ Blog
+ </a>
+
+ <a href="../sayfalar/iletisim.html">
+ İletişim
+ </a>
+
+ </nav>
+
+ <div class="social-icons">
+<!-- Telefon -->
+    <a href="tel:+905367128164" class="header-icon phone-icon" aria-label="Telefon Et">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Konum / Harita -->
+    <a href="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul" target="_blank" class="header-icon map-icon" aria-label="Konum">
+        <i class="fa-solid fa-location-dot"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/905367128164" target="_blank" class="header-icon whatsapp-icon" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+ </a>
+
+ </div>
+
+ <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+ <i class="fa-solid fa-bars"></i>
+ </button>
+
+ </div>
+
+ </header>
+
+ <section class="gallery-hero">
+ <img src="../images/slider1.jpg" alt="Öz Zafer Asansör Foto Galeri" class="gallery-hero-bg">
+ <div class="gallery-hero-overlay"></div>
+
+ <div class="container gallery-hero-content">
+
+ <span>FOTO GALERİ</span>
+
+ <h1>Çalışmalarımızdan Kareler</h1>
+
+ <p>
+ Öz Zafer Asansör ile güvenli, hızlı ve profesyonel çözümler.
+ </p>
+
+ </div>
+
+ </section>
+
+ <main>
+
+ <section class="gallery-main">
+
+ <div class="container">
+
+ <div class="gallery-heading">
+
+ <span>ÇALIŞMALARIMIZ</span>
+
+ <h2>Hizmetlerimizden Görüntüler</h2>
+
+ <p>
+ Gerçekleştirdiğimiz asansör ve taşıma çalışmalarından
+ bazı kareleri aşağıda inceleyebilirsiniz.
+ </p>
+
+ </div>
+
+ <div class="gallery-grid-new">
+
+ <div class="gallery-item-new" data-index="0">
+
+ <img src="../images/fotogaleri1.jfif" alt="Asansör çalışması">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>01</span>
+ <h3>Asansör Çalışması</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-item-new" data-index="1">
+
+ <img src="../images/fotogaleri2.jfif" alt="Asansör hizmeti">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>02</span>
+ <h3>Asansör Hizmeti</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-item-new" data-index="2">
+
+ <img src="../images/fotogaleri3.jfif" alt="Taşıma çalışması">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>03</span>
+ <h3>Taşıma Çalışması</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-item-new" data-index="3">
+
+ <img src="../images/fotogaleri4.jfif" alt="Asansör kiralama">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>04</span>
+ <h3>Asansör Kiralama</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-item-new" data-index="4">
+
+ <img src="../images/fotogaleri5.jfif" alt="Filomuz">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>05</span>
+ <h3>Filomuz</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-item-new" data-index="5">
+
+ <img src="../images/fotogaleri6.jfif" alt="Profesyonel hizmet">
+
+ <div class="gallery-overlay">
+
+ <div class="gallery-overlay-content">
+ <span>06</span>
+ <h3>Profesyonel Hizmet</h3>
+ </div>
+
+ <div class="gallery-zoom">
+ <i class="fa-solid fa-magnifying-glass-plus"></i>
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="gallery-info">
+
+ <div class="gallery-info-content">
+
+ <h3>Profesyonel çözümlerimizi yakından inceleyin.</h3>
+
+ <p>
+ Asansör kiralama ve taşıma hizmetlerimiz hakkında
+ daha fazla bilgi almak için bizimle iletişime geçebilirsiniz.
+ </p>
+
+ </div>
+
+ <a href="iletisim.html" class="gallery-info-button">
+ İletişime Geç
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <section class="gallery-cta">
+
+ <div class="container gallery-cta-content">
+
+ <div>
+
+ <h2>Güvenli taşıma için doğru ekip.</h2>
+
+ <p>
+ Hizmetlerimiz hakkında bilgi almak için hemen bize ulaşın.
+ </p>
+
+ </div>
+
+ <a href="iletisim.html" class="gallery-cta-button">
+ Teklif Al
+ <i class="fa-solid fa-arrow-right"></i>
+ </a>
+
+ </div>
+
+ </section>
+
+ </main>
+
+ <div class="gallery-lightbox" id="galleryLightbox">
+
+ <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">
+ <i class="fa-solid fa-xmark"></i>
+ </button>
+
+ <button class="lightbox-prev" id="lightboxPrev" aria-label="Önceki">
+ <i class="fa-solid fa-chevron-left"></i>
+ </button>
+
+ <img class="lightbox-image" id="lightboxImage" src="" alt="Büyük fotoğraf">
+
+ <button class="lightbox-next" id="lightboxNext" aria-label="Sonraki">
+ <i class="fa-solid fa-chevron-right"></i>
+ </button>
+
+ <div class="lightbox-counter" id="lightboxCounter">
+ 1 / 6
+ </div>
+
+ </div>
+
+ <footer class="zafer-footer">
+
+ <div class="footer-top-banner">
+
+ <div class="container">
+
+ <div class="footer-banner-left">
+ <h2>Yükseklerde Güvenli ve Hızlı Çözümler.</h2>
+ </div>
+
+ <div class="footer-banner-right">
+
+ <a href="tel:+905367128164" class="footer-info-box phone-btn">
+
+ <div class="icon-box">
+ <i class="fa-solid fa-phone"></i>
+ </div>
+
+ <div>
+ <span>TELEFON</span>
+ <p>+90 536 712 81 64</p>
+ </div>
+
+ </a>
+
+ <div class="footer-info-box">
+
+ <div class="icon-box">
+ <i class="fa-solid fa-location-dot"></i>
+ </div>
+
+ <div>
+ <span>MERKEZ</span>
+ <p>Avcılar / İstanbul</p>
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="footer-main-content">
+
+ <div class="container footer-grid">
+
+ <div class="footer-col brand-col">
+
+ <div class="footer-logo">
+ <span class="logo-text">ÖzZafer</span>
+ <small>ASANSÖR KİRALAMA</small>
+ </div>
+
+ <p class="footer-about">
+ Profesyonel asansör kiralama hizmetleriyle yüksek
+ katlara güvenli, hızlı ve pratik çözümler sunuyoruz.
+ </p>
+
+ <div class="footer-address">
+
+ <strong>ADRES</strong>
+
+ <p>
+ Denizköşkler Mah. Dr.Sadık Ahmet
+ Cad.No:114 Avcılar/İstanbul
+ </p>
+
+ </div>
+
+ <div class="footer-socials">
+
+ <a href="https://www.instagram.com/ozzafer_nakliyat/" target="_blank" aria-label="Instagram">
+
+ <i class="fa-brands fa-instagram"></i>
+
+ </a>
+
+ <a href="https://www.facebook.com/ozzafernakliye" target="_blank" aria-label="Facebook">
+
+ <i class="fa-brands fa-facebook-f"></i>
+
+ </a>
+
+ <a href="https://wa.me/905367128164" target="_blank" aria-label="WhatsApp">
+
+ <i class="fa-brands fa-whatsapp"></i>
+
+ </a>
+
+ </div>
+
+ </div>
+
+ <div class="footer-col">
+
+ <h4>HİZMETLERİMİZ</h4>
+
+ <ul>
+
+ <li>
+ <a href="../sayfalar/hizmetler.html">
+ Evden Eve Taşımacılık
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/asansorkirala.html">
+ Asansör Kiralama
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/hizmetler.html">
+ Asansörlü Nakliye
+ </a>
+ </li>
+
+ </ul>
+
+ </div>
+
+ <div class="footer-col">
+
+ <h4>SİTE NAVİGASYONU</h4>
+
+ <ul>
+
+ <li>
+ <a href="../index.html">
+ Ana Sayfa
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/hakkimizda.html">
+ Hakkımızda
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/asansorkirala.html">
+ Asansör Kiralama
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/hizmetler.html">
+ Hizmetlerimiz
+ </a>
+ </li>
+
+ <li>
+ <a href="../blog.html">
+ Blog
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/fotogaleri.html">
+ Foto Galeri
+ </a>
+ </li>
+
+ <li>
+ <a href="../sayfalar/iletisim.html">
+ İletişim
+ </a>
+ </li>
+
+ </ul>
+
+ </div>
+
+ <div class="footer-col footer-map">
+
+ <h4>HARİTADA BİZ</h4>
+
+ <div class="map-container">
+
+ <iframe
+ src="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul&output=embed"
+ width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+ referrerpolicy="no-referrer-when-downgrade">
+ </iframe>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="footer-bottom-bar">
+
+ <div class="container bottom-flex">
+
+ <p>
+ &copy; 2026 Öz Zafer Asansör. Tüm hakları saklıdır.
+ </p>
+
+ </div>
+
+ </div>
+
+ </footer>
+
+ <a href="https://wa.me/905367128164" class="whatsapp-button" aria-label="WhatsApp" target="_blank">
+
+ <i class="fa-brands fa-whatsapp"></i>
+
+ </a>
+
+ <script src="../script.js"></script>
+
+ <script>
+ const galleryItems = document.querySelectorAll(".gallery-item-new");
+ const lightbox = document.getElementById("galleryLightbox");
+ const lightboxImage = document.getElementById("lightboxImage");
+ const lightboxClose = document.getElementById("lightboxClose");
+ const lightboxPrev = document.getElementById("lightboxPrev");
+ const lightboxNext = document.getElementById("lightboxNext");
+ const lightboxCounter = document.getElementById("lightboxCounter");
+
+ const galleryImages = [
+ "../images/fotogaleri1.jfif",
+ "../images/fotogaleri2.jfif",
+ "../images/fotogaleri3.jfif",
+ "../images/fotogaleri4.jfif",
+ "../images/fotogaleri5.jfif",
+ "../images/fotogaleri6.jfif"
+ ];
+
+ let currentImage = 0;
+
+ function showGalleryImage(index) {
+ if (index < 0) {
+ index = galleryImages.length - 1;
+ }
+
+ if (index >= galleryImages.length) {
+ index = 0;
+ }
+
+ currentImage = index;
+
+ lightboxImage.src = galleryImages[currentImage];
+ lightboxCounter.textContent =
+ (currentImage + 1) + " / " + galleryImages.length;
+ }
+
+ function openLightbox(index) {
+ showGalleryImage(index);
+ lightbox.classList.add("active");
+ document.body.style.overflow = "hidden";
+ }
+
+ function closeLightbox() {
+ lightbox.classList.remove("active");
+ document.body.style.overflow = "";
+ }
+
+ galleryItems.forEach(function (item) {
+ item.addEventListener("click", function () {
+ const index = parseInt(item.getAttribute("data-index"));
+ openLightbox(index);
+ });
+ });
+
+ lightboxClose.addEventListener("click", function () {
+ closeLightbox();
+ });
+
+ lightboxPrev.addEventListener("click", function () {
+ showGalleryImage(currentImage - 1);
+ });
+
+ lightboxNext.addEventListener("click", function () {
+ showGalleryImage(currentImage + 1);
+ });
+
+ lightbox.addEventListener("click", function (event) {
+ if (event.target === lightbox) {
+ closeLightbox();
+ }
+ });
+
+ document.addEventListener("keydown", function (event) {
+
+ if (!lightbox.classList.contains("active")) {
+ return;
+ }
+
+ if (event.key === "Escape") {
+ closeLightbox();
+ }
+
+ if (event.key === "ArrowLeft") {
+ showGalleryImage(currentImage - 1);
+ }
+
+ if (event.key === "ArrowRight") {
+ showGalleryImage(currentImage + 1);
+ }
+ });
+ </script>
+
+</body>
+
+</html>

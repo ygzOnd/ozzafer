@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Asansör Kiralama İstanbul | Öz Zafer Asansör</title>
+
+    <meta name="description"
+        content="İstanbul'da güvenli ve profesyonel asansör kiralama hizmeti. Evden eve taşıma, eşya taşıma ve bina dışı asansör çözümleri için Öz Zafer.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.ozzaferasansor.com/sayfalar/asansorkirala.html">
+
+
+    <style>
+        .rental-page {
+            background: #f5f6f8;
+        }
+
+        .rental-hero {
+            min-height: 520px !important;
+            margin-top: 85px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: none !important;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .rental-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover !important;
+            object-position: center bottom !important;
+            z-index: 1;
+        }
+
+        .rental-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .45), rgba(0, 0, 0, .2));
+            z-index: 2;
+        }
+
+        .rental-hero-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0 7%;
+        }
+
+        .rental-hero-content .hero-label {
+            color: #e31b22;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        .rental-hero-content h1 {
+            font-size: 50px;
+            line-height: 1.15;
+            margin: 15px 0;
+        }
+
+        .rental-hero-content h1 strong {
+            color: #ffffff;
+        }
+
+        .rental-hero-content p {
+            max-width: 650px;
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .rental-main {
+            padding: 90px 0;
+        }
+
+        .rental-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .rental-image {
+            position: relative;
+            height: 480px;
+            overflow: hidden;
+            border: 2px solid #d71920;
+            outline: 2px solid #111;
+            padding: 3px;
+            background: #fff;
+        }
+
+        .rental-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rental-image-badge {
+            position: absolute;
+            left: 25px;
+            bottom: 25px;
+            background: #111;
+            color: #fff;
+            padding: 18px 22px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+        }
+
+        .rental-image-badge i {
+            color: #d71920;
+            font-size: 27px;
+        }
+
+        .rental-image-badge strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .rental-image-badge span {
+            display: block;
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        .rental-intro-content .small-title {
+            color: #d71920;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .rental-intro-content h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin: 12px 0 20px;
+        }
+
+        .rental-intro-content h2 strong {
+            color: #d71920;
+        }
+
+        .rental-intro-content p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .rental-check-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+            margin: 25px 0 30px;
+        }
+
+        .rental-check-list div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .rental-check-list i {
+            color: #d71920;
+        }
+
+        .rental-services {
+            margin-bottom: 80px;
+        }
+
+        .rental-section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .rental-section-title span {
+            color: #d71920;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .rental-section-title h2 {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-top: 10px;
+        }
+
+        .rental-section-title h2 strong {
+            color: #d71920;
+        }
+
+        .rental-section-title .line {
+            width: 55px;
+            height: 3px;
+            background: #d71920;
+            margin: 18px auto 0;
+        }
+
+        .rental-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .rental-service-card {
+            background: #fff;
+            padding: 35px 30px;
+            position: relative;
+            border-bottom: 3px solid transparent;
+            transition: .3s;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, .04);
+        }
+
+        .rental-service-card:hover {
+            transform: translateY(-8px);
+            border-bottom-color: #d71920;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .09);
+        }
+
+        .rental-service-number {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 42px;
+            font-weight: 800;
+            color: #f1f1f1;
+        }
+
+        .rental-service-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff0e4;
+            color: #d71920;
+            border-radius: 50%;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .rental-service-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .rental-service-card p {
+            color: #777;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .rental-info {
+            background: #111;
+            color: #fff;
+            padding: 65px;
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .rental-info h2 {
+            font-size: 34px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .rental-info h2 strong {
+            color: #d71920;
+        }
+
+        .rental-info p {
+            color: #aaa;
+            font-size: 14px;
+            max-width: 650px;
+        }
+
+        .rental-info-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .rental-info-list div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .rental-info-list i {
+            color: #d71920;
+            font-size: 16px;
+        }
+
+        .rental-cta {
+            background: #d71920;
+            color: #fff;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .rental-cta h2 {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .rental-cta p {
+            color: #f6d7d7;
+            font-size: 13px;
+        }
+
+        .rental-cta-button {
+            background: #111;
+            color: #fff;
+            padding: 16px 28px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            transition: .3s;
+            white-space: nowrap;
+        }
+
+        .rental-cta-button:hover {
+            background: #fff;
+            color: #111;
+            transform: translateY(-3px);
+        }
+
+        .zafer-footer {
+            margin-top: 0;
+        }
+
+        .footer-socials a:nth-child(3):hover {
+            background: #25d366;
+            border-color: #25d366;
+        }
+
+        .whatsapp-button {
+            transition: .3s;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.08);
+        }
+
+        @media (max-width: 900px) {
+            .rental-intro {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .rental-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .rental-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 45px;
+            }
+
+            .rental-cta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .rental-hero {
+                margin-top: 75px;
+                min-height: 400px !important;
+            }
+
+            .rental-hero-content h1 {
+                font-size: 34px;
+            }
+
+            .rental-hero-content p {
+                font-size: 14px;
+            }
+
+            .rental-main {
+                padding: 65px 0;
+            }
+
+            .rental-image {
+                height: 350px;
+            }
+
+            .rental-intro-content h2 {
+                font-size: 30px;
+            }
+
+            .rental-check-list {
+                grid-template-columns: 1fr;
+            }
+
+            .rental-section-title h2 {
+                font-size: 30px;
+            }
+
+            .rental-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .rental-info {
+                padding: 35px 25px;
+            }
+
+            .rental-info h2 {
+                font-size: 28px;
+            }
+
+            .rental-cta {
+                padding: 35px 25px;
+            }
+
+            .rental-cta h2 {
+                font-size: 26px;
+            }
+
+            .rental-cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body class="rental-page">
+
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.jfif" alt="Öz Zafer Asansör Logo">
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="../index.html">
+                    Ana Sayfa
+                </a>
+
+                <a href="../sayfalar/asansorkirala.html" class="active">
+                    Asansör Kiralama
+                </a>
+
+                <a href="../sayfalar/hakkimizda.html">
+                    Hakkımızda
+                </a>
+
+                <a href="../sayfalar/hizmetler.html">
+                    Hizmetlerimiz
+                </a>
+
+                <a href="../sayfalar/fotogaleri.html">
+                    Foto Galeri
+                </a>
+
+                <a href="../blog.html">
+                    Blog
+                </a>
+
+                <a href="../sayfalar/iletisim.html">
+                    İletişim
+                </a>
+
+            </nav>
+
+
+            <div class="social-icons">
+                <!-- Telefon -->
+                <a href="tel:+905367128164" class="header-icon phone-icon" aria-label="Telefon Et">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+                <!-- Konum / Harita -->
+                <a href="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul"
+                    target="_blank" class="header-icon map-icon" aria-label="Konum">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/905367128164" target="_blank" class="header-icon whatsapp-icon"
+                    aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section class="rental-hero">
+
+        <img src="../images/h1.jfif" alt="Öz Zafer Asansör Kiralama" class="rental-hero-bg">
+        <div class="rental-hero-overlay"></div>
+
+        <div class="container rental-hero-content">
+
+            <span class="hero-label">
+                ASANSÖR KİRALAMA
+            </span>
+
+            <h1>
+                Güvenli ve
+                <strong>Profesyonel</strong>
+                Asansör Kiralama
+            </h1>
+
+            <p>
+                Öz Zafer Asansör ile yüksek katlara yapılacak
+                taşıma işlemlerinde güvenli, hızlı ve profesyonel
+                çözümlerden yararlanın.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main class="rental-main">
+
+        <div class="container">
+
+
+            <section class="rental-intro">
+
+                <div class="rental-image">
+
+                    <img src="../images/hizmetlerimiz1.png" alt="Öz Zafer Asansör Kiralama">
+
+                    <div class="rental-image-badge">
+
+                        <i class="fa-solid fa-elevator"></i>
+
+                        <div>
+                            <strong>Asansör Kiralama</strong>
+                            <span>Güvenli Taşıma Çözümü</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rental-intro-content">
+
+                    <span class="small-title">
+                        ÖZ ZAFER ASANSÖR
+                    </span>
+
+                    2>
+                    Güvenli taşıma için
+                    <strong>doğru çözüm.</strong>
+                    </h2>
+
+                    <p>
+                        Öz Zafer Asansör, yüksek katlı binalarda
+                        eşya ve malzemelerin güvenli şekilde
+                        taşınması için profesyonel asansör
+                        kiralama çözümleri sunar.
+                    </p>
+
+                    <p>
+                        Taşıma planınıza ve bina koşullarına
+                        uygun çözüm için ihtiyaçlarınızı
+                        değerlendirerek hizmet sunuyoruz.
+                    </p>
+
+
+                    <div class="rental-check-list">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Bina dışı asansör çözümleri</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Evden eve taşıma desteği</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Yüksek katlara erişim</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Profesyonel ekipman</span>
+                        </div>
+
+                    </div>
+
+
+                    <a href="iletisim.html" class="btn">
+                        Teklif Al
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <section class="rental-services">
+
+                <div class="rental-section-title">
+
+                    <span>
+                        HİZMET KAPSAMI
+                    </span>
+
+                    <h2>
+                        İhtiyacınıza Uygun
+                        <strong>Çözümler</strong>
+                    </h2>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                <div class="rental-cards">
+
+
+                    <div class="rental-service-card">
+
+                        <div class="rental-service-number">
+                            01
+                        </div>
+
+                        <div class="rental-service-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>
+                            Bina Dışı Asansör
+                        </h3>
+
+                        <p>
+                            Yüksek katlı binalarda eşyaların
+                            daha kolay ve güvenli şekilde
+                            taşınmasına yardımcı olan
+                            profesyonel çözümler.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rental-service-card">
+
+                        <div class="rental-service-number">
+                            02
+                        </div>
+
+                        <div class="rental-service-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <h3>
+                            Ev Taşıma
+                        </h3>
+
+                        <p>
+                            Taşınma sırasında özellikle yüksek
+                            katlara eşya çıkarma ve indirme
+                            işlemlerini kolaylaştıran çözümler.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rental-service-card">
+
+                        <div class="rental-service-number">
+                            03
+                        </div>
+
+                        <div class="rental-service-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <h3>
+                            Eşya Taşıma
+                        </h3>
+
+                        <p>
+                            Mobilya ve çeşitli eşyaların
+                            yüksek katlara ulaştırılmasında
+                            pratik taşıma desteği.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <section class="rental-info">
+
+                <div>
+
+                    <h2>
+                        Neden asansörlü
+                        <strong>taşıma?</strong>
+                    </h2>
+
+                    <p>
+                        Özellikle yüksek katlı binalarda geleneksel
+                        taşıma yöntemleri zaman ve iş gücü açısından
+                        daha zahmetli olabilir. Asansörlü taşıma
+                        çözümleri, taşıma sürecinin daha pratik
+                        şekilde gerçekleştirilmesine yardımcı olur.
+                    </p>
+
+                </div>
+
+
+                <div class="rental-info-list">
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Daha pratik taşıma</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Zamandan tasarruf</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yüksek katlara kolay erişim</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Profesyonel çalışma</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="rental-cta">
+
+                <div>
+
+                    <h2>
+                        Asansör kiralamak mı istiyorsunuz?
+                    </h2>
+
+                    <p>
+                        İhtiyacınızı ve taşıma koşullarınızı
+                        bizimle paylaşın, size uygun çözüm
+                        hakkında bilgi verelim.
+                    </p>
+
+                </div>
+
+
+                <a href="iletisim.html" class="rental-cta-button">
+
+                    <span>
+                        İletişime Geçin
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="zafer-footer">
+
+
+        <div class="footer-top-banner">
+
+            <div class="container">
+
+                <div class="footer-banner-left">
+
+                    <h2>
+                        Yükseklerde Güvenli ve Hızlı Çözümler.
+                    </h2>
+
+                </div>
+
+
+                <div class="footer-banner-right">
+
+
+                    <a href="tel:+905367128164" class="footer-info-box phone-btn">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                TELEFON
+                            </span>
+
+                            <p>
+                                +90 536 712 81 64
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="footer-info-box">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                MERKEZ
+                            </span>
+
+                            <p>
+                                Avcılar / İstanbul
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-main-content">
+
+            <div class="container footer-grid">
+
+
+                <div class="footer-col brand-col">
+
+                    <div class="footer-logo">
+
+                        <span class="logo-text">
+                            ÖzZafer
+                        </span>
+
+                        <small>
+                            ASANSÖR KİRALAMA
+                        </small>
+
+                    </div>
+
+
+                    <p class="footer-about">
+
+                        Profesyonel asansör kiralama
+                        hizmetleriyle yüksek katlara
+                        güvenli, hızlı ve pratik
+                        çözümler sunuyoruz.
+
+                    </p>
+
+
+                    <div class="footer-address">
+
+                        <strong>
+                            ADRES
+                        </strong>
+
+                        <p>
+                            Denizköşkler Mah.
+                            Dr.Sadık Ahmet Cad.No:114
+                            Avcılar/İstanbul
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-socials">
+
+                        <a href="https://www.instagram.com/ozzafer_nakliyat/" target="_blank" aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="https://www.facebook.com/ozzafernakliye" target="_blank" aria-label="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/905367128164" target="_blank" aria-label="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-col">
+
+                    <h4>
+                        HİZMETLERİMİZ
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            <a href="../sayfalar/hizmetler.html">
+                                Evden Eve Taşımacılık
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/asansorkirala.html">
+                                Asansör Kiralama
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/hizmetler.html">
+                                Asansörlü Nakliye
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-col">
+
+                    <h4>
+                        SİTE NAVİGASYONU
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            <a href="../index.html">
+                                Ana Sayfa
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/hakkimizda.html">
+                                Hakkımızda
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/asansorkirala.html">
+                                Asansör Kiralama
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/hizmetler.html">
+                                Hizmetlerimiz
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../blog.html">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/fotogaleri.html">
+                                Foto Galeri
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../sayfalar/iletisim.html">
+                                İletişim
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-col footer-map">
+
+                    <h4>
+                        HARİTADA BİZ
+                    </h4>
+
+                    <div class="map-container">
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Denizköşkler%20Mahallesi%20Dr.%20Sadık%20Ahmet%20Caddesi%20No%3A114%20Avcılar%20İstanbul&output=embed"
+                            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom-bar">
+
+            <div class="container bottom-flex">
+
+                <p>
+                    &copy; 2026 Öz Zafer Asansör.
+                    Tüm hakları saklıdır.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <a href="https://wa.me/905367128164" class="whatsapp-button" aria-label="WhatsApp" target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <script src="../script.js"></script>
+
+
+    <script>
+
+        const rentalCards =
+            document.querySelectorAll(".rental-service-card");
+
+        rentalCards.forEach(function (card) {
+
+            card.addEventListener("mouseenter", function () {
+                card.style.transform = "translateY(-8px)";
+            });
+
+            card.addEventListener("mouseleave", function () {
+                card.style.transform = "translateY(0)";
+            });
+
+        });
+
+
+        window.addEventListener("scroll", function () {
+
+            const header =
+                document.querySelector(".header");
+
+            if (!header) {
+                return;
+            }
+
+            if (window.scrollY > 50) {
+
+                header.style.boxShadow =
+                    "0 5px 20px rgba(0,0,0,0.12)";
+
+            } else {
+
+                header.style.boxShadow =
+                    "0 2px 15px rgba(0,0,0,0.08)";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
